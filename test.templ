@@ -1,0 +1,16 @@
+@type T i32 (char*, charptr)
+
+@file "test.h" T
+
+typedef struct {
+	T field;
+} Test_<T>;
+
+void my_func_<T>(T parameter);
+
+@file "test.c" T
+
+void my_func_<T>(T parameter)
+{
+	printf("%d\n", T);
+}

@@ -1,0 +1,2 @@
+type_directive = TYPE_DECL IDENT { IDENT | '(' IDENT ',' STRING ')' }
+file_directive = FILE_DECL STRING { IDENT }
